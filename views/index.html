@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/css/normalize.css">
     <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="icon" href="../public/image/alemania.png">
+    <script src="https://kit.fontawesome.com/b1900538a6.js" crossorigin="anonymous"></script>
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Consultorio Alemán</title>
 </head>
 <body>
     <header>
       <nav class="navbar  navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Sanatorio Aleman <img height="40px" width="60" src="../public/image/alemania.png" alt=""></a>
+          <a class="navbar-brand" href="#">Consultorio Alemán <img height="40px" width="60" src="../public/image/alemania.png" alt=""></a>
          <button class="navbar-toggler   " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"  aria-expanded="false" aria-label="Toggle navigation">
           
          <span class="navbar-toggler-icon"></span>
@@ -33,6 +35,7 @@
                   <li><a class="dropdown-item" href="#odontologo">odontologo</a></li>
                   <li><a class="dropdown-item" href="#cardiologo">cardiologo</a></li>
                   <li><a class="dropdown-item" href="#cirujano">cirujano</a></li>
+                  <li><a class="dropdown-item" href="#pediatria">pediatria</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -50,16 +53,18 @@
         <img class="img-fluid" src="../public/image/frente.jpg" alt=" frente del consultorio">
 
     </div>
-    <div>
+    <div class="divInstitucional ">
       <h2>Institucional</h2>
       <p>Desde el año 2010 el Sanatorio Alemán tiene como misión cuidar de tu salud y la de tus seres queridos, nuestras modernas instalaciones, personal medico altamente capacitado y nuestro servicio de urgencia, nos ha ubicado a la vanguardia de la medicina. </p>
     </div>
       </section>
-      <section>
-        <h2>profesionales</h2>
-        <article>
+      <div class="cuerpo">
+        <div class="profesionales">
+           <h2 >profesionales</h2>
+        </div>
+      <section>     
           <h3 id="clinico">clínicos</h3>
-          <div>
+          <div class="tarjetasProfesionales">
           <ul>
             <li>Fernando garcia
               <ul>
@@ -97,14 +102,14 @@
             </li>
             </ul>
             </div>
-        <div>   
-          <img class="img-fluid" src="../public/image/clinico.jpg" alt="">
+        <div class="divImagen">   
+          <img class="img-fluid" src="../public/image/clinico.jpg" alt="consultorio_clínico">
         </div>   
-        </article>
+        
       </section>
       <section>
         <h3 id="odontologo">odontología</h3>
-        <div>
+        <div class="tarjetasProfesionales">
         <ul>
           <li>julio suarez <ul>
             <li>lunes, martes, miercoles y jueves de 15 a 18hs</li></ul>
@@ -119,14 +124,12 @@
           </li>
         </ul>
       </div>
-      <div> 
-      <img class="img-fluid" width="100%" src="../public/image/odontologia.jfif" alt="">
-    </div>
-      </section>
+      <div class="divImagen"> 
+      <img class="img-fluid" width="100%" src="../public/image/odontologia.jfif" alt="consultorio_odontología">
+      </div>
       <section>
-        
         <h3 id="cardiologo">cardiólogo</h3>
-        <div>
+        <div class="tarjetasProfesionales">
         <ul>
           <li>jose pazos
             <ul>
@@ -141,13 +144,13 @@
           </li>
         </ul>
         </div>
-        <div>
-         <img class="img-fluid" src="../public/image/cardiologo.jpg" alt="">
+        <div class="divImagenes">
+         <img class="img-fluid" src="../public/image/cardiologo.jpg" alt="consultorio_cardiólogo" title="cardiólogo">
         </div>
       </section>
       <section>
         <h3 id="cirujano">cirujano</h3>
-        <div>
+        <div class="tarjetasProfesionales">
           <ul>
             <li> juan garcias
               <ul>
@@ -155,8 +158,6 @@
               </ul>
             </li>
           </ul>
-        </div>
-        <div>
           <ul>
             <li>ernesto shuck
               <ul>
@@ -164,8 +165,6 @@
               </ul>
             </li>
           </ul>
-        </div>
-        <div>
           <ul>
             <li>nicolas schamne
               <ul>
@@ -174,13 +173,13 @@
             </li>
           </ul>
         </div>
-        <div>
-          <img class="img-fluid" width="100%" src="../public/image/cirujano.jfif" alt="">
+        <div class="divImagenes">
+          <img class="img-fluid" width="100%" src="../public/image/cirujano.jfif" alt="consultorio_cirujano">
         </div>
       </section>
       <section>
-        <h3>pediatria</h3>
-        <div>
+        <h3 id="pediatria">pediatria</h3>
+        <div class="tarjetasProfesionales">
           <ul>
             <li>carlonia emer 
               <ul>
@@ -188,8 +187,6 @@
               </ul>
             </li>
           </ul>
-        </div>
-        <div>
           <ul>
             <li>josefina jerkia
               <ul>
@@ -197,8 +194,6 @@
               </ul>
             </li>
           </ul>
-        </div>
-        <div>
           <ul>
             <li>maria jose pereyra 
               <ul>
@@ -207,13 +202,14 @@
             </li>
           </ul>
         </div>
-        <div>
-          <img class="img-fluid" src="../public/image/pediatria.jpg" alt="">
+        <div class="divImagenes">
+          <img class="img-fluid" src="../public/image/pediatria.jpg" alt="consultorio_pediátrico">
         </div>
       </section>
+    </div>
       <section id="contacto">
         <h3>contacto</h3>
-        <div>
+        <div class="divFormulario">
           <form action="/registro" method="post">
             <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
             <input type="email" name="email" placeholder="e-mail" required>
@@ -223,8 +219,12 @@
           </form>
         </div>
       </section>
+  
       <footer>
-        <div>facebook </div>
+        <div>
+          <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a></div>
       </footer>
       <!--falta ver que el menu responsive no se cierra solo
       agregar clase y acomodar div de los profecionales  (tambien ortografía)
