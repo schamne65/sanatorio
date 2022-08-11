@@ -19,9 +19,19 @@ body{
 h2 {
     text-align: center;
 }
+.whatsapp{
+         font-size: 70px;
+        position: fixed;
+        bottom: 40px;
+        right: 0vh;
+    }
+ .whatsapp i{
+    color: #00bb2d;
+ }   
+
 
 .cuerpo {
-    border: 3px solid #000;
+   
     background-color: #F1F1F1 ;
 }
 
@@ -33,8 +43,59 @@ h3{ padding: 10px;
     margin: 10px;
    
 }
+.divFormulario{
+    width: 100%;
+  
+}
+#contacto{
+    background-color: #F7EDDB;
+}
+
+#contacto h3{
+    text-align: center;
+
+}
 
 .divFormulario form{
-    display: flex;
+     display: flex;
     flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    border-radius: 4px ;
+    width: 70%;
+    margin: 7px;
+}
+
+footer{
+    background-color: #DFE8CC;
+
+}
+.divFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iFooter{
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.fa-facebook-f:hover{
+    color: #3b5998;
+}
+.fa-instagram:hover{
+ color:#de4c8a;
+}
+
+.fa-youtube:hover{
+    color: red;
+    
+}
+.fa-phone:hover{
+color: green;
 }
